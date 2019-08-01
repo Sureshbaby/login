@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+ <nav class="navbar navbae-default navbar-static-top">
+     <div class="container">
+         <ul class="nav navbar-nav">
+             <li><a class="navbar-brand" href="{% url 'index' %}">BRAND</a></li>
+             <li><a class="navbar-admin" href="{% url 'admin:index'%}">Admin</a> </li>
+             <li><a class="navbar-other" href="{% url 'LevelApp:other'%}">Others</a> </li>
+         </ul>
+     </div>
+ </nav>
+    <div class="container">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>
